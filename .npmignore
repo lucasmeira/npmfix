@@ -1,0 +1,8 @@
+.changeset
+.github
+logs
+src
+tsconfig.json
+package-lock.json
+.husky
+coverage

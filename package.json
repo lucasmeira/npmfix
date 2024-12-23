@@ -1,5 +1,5 @@
 {
-    "name": "npmfix",
+    "name": "@lucasmeira/npmfix",
     "version": "0.0.0",
     "description": "A CLI to fix npm dependencies",
     "private": false,

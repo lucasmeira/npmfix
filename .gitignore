@@ -2,4 +2,5 @@
 logs
 
 node_modules/
+dist/
 coverage/

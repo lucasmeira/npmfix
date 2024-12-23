@@ -1,8 +1,8 @@
 name: CD
 on:
-  pull_request:
+  push:
     branches:
-      - release
+      - main
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 

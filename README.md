@@ -1,11 +1,11 @@
 # npmfix
 
 <p align="center">
-  <a href="https://github.com/lucameira/npmfix/actions/workflows/main.yml">
-    <img src="https://github.com/lucameira/npmfix/actions/workflows/main.yml/badge.svg" alt="Build Status">
+  <a href="https://github.com/lucasmeira/npmfix/actions/workflows/main.yml">
+    <img src="https://github.com/lucasmeira/npmfix/actions/workflows/main.yml/badge.svg" alt="Build Status">
   </a>
-  <a href="https://github.com/lucameira/npmfix/actions/workflows/publish.yml">
-    <img src="https://github.com/lucameira/npmfix/actions/workflows/publish.yml/badge.svg" alt="CD Pipeline">
+  <a href="https://github.com/lucasmeira/npmfix/actions/workflows/publish.yml">
+    <img src="https://github.com/lucasmeira/npmfix/actions/workflows/publish.yml/badge.svg" alt="CD Pipeline">
   </a>
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/npm/l/npmfix" alt="License MIT">
@@ -31,7 +31,7 @@ This project was created to simplify cleaning and reinstalling dependencies for 
 # Installation
 
 ```bash
-$ npm i -g npmfix
+$ npm i -g @lucasmeira/npmfix
 # Unix users may need to run the command with sudo. Go carefully
 ```
 
@@ -50,7 +50,7 @@ npmfix executes the default sequence of clean, reinstall, and build processes se
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/lucameira/npmfix.git
+    git clone https://github.com/lucasmeira/npmfix.git
     ```
 2. Install dependencies:
     ```bash
@@ -73,7 +73,7 @@ npmfix executes the default sequence of clean, reinstall, and build processes se
 
 ### Reporting Issues
 
-1. Check the [issues page](https://github.com/lucameira/npmfix/issues) to see if your issue has already been reported.
+1. Check the [issues page](https://github.com/lucasmeira/npmfix/issues) to see if your issue has already been reported.
 2. Create a new issue with a descriptive title and detailed explanation.
 3. Include steps to reproduce the issue and relevant logs or screenshots if applicable.
 
@@ -113,7 +113,7 @@ npmfix executes the default sequence of clean, reinstall, and build processes se
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/lucameira/npmfix.git
+    git clone https://github.com/lucasmeira/npmfix.git
     ```
 2. Install dependencies:
     ```bash
@@ -145,4 +145,4 @@ npmfix executes the default sequence of clean, reinstall, and build processes se
 
 ## Changelog
 
-The changelog is generated automatically during the Continuous Deployment (CD) process. You can find the latest updates and release notes in the [Releases](https://github.com/lucameira/npmfix/releases) page.
+The changelog is generated automatically during the Continuous Deployment (CD) process. You can find the latest updates and release notes in the [Releases](https://github.com/lucasmeira/npmfix/releases) page.

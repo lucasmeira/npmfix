@@ -3,6 +3,8 @@ import i18next from 'i18next';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
+import 'module-alias/register';
+
 import { buildProject } from './commands/build';
 import { cleanProject } from './commands/clean';
 import { reinstallPackages } from './commands/reinstall';

@@ -54,11 +54,11 @@ npmfix executes the default sequence of clean, reinstall, and build processes se
     ```
 2. Install dependencies:
     ```bash
-    npm install
+    npm install && npm run build
     ```
 3. Make the CLI executable:
     ```bash
-    chmod +x dist/index.js
+    chmod +x dist/src/index.js
     ```
 4. Link the CLI tool globally:
     ```bash

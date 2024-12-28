@@ -2,16 +2,16 @@
     "compilerOptions": {
         "target": "ES2020",
         "module": "CommonJS",
-        "rootDir": "./src",
-        "outDir": "./dist",
         "strict": true,
         "esModuleInterop": true,
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "types": ["node", "jest", "i18next"],
-        "baseUrl": "./",
+        "rootDir": ".",
+        "outDir": "./dist",
+        "baseUrl": ".",
         "paths": {
-            "@": ["src"]
+            "@/*": ["./*"]
         },
         "strictNullChecks": true,
         "rewriteRelativeImportExtensions": true,
@@ -20,7 +20,7 @@
         "allowImportingTsExtensions": true,
         "allowSyntheticDefaultImports": true
     },
-    "include": ["src/**/*.ts", "**/*.test.ts"],
+    "include": ["src/**/*.ts", "test/**/*.test.ts"],
     "exclude": [
         "node_modules",
         "log",

@@ -1,9 +1,8 @@
+import tsPlugin from '@typescript-eslint/eslint-plugin';
+import tsParser from '@typescript-eslint/parser';
 import importPlugin from 'eslint-plugin-import';
 import prettierPlugin from 'eslint-plugin-prettier';
 import unusedImports from 'eslint-plugin-unused-imports';
-
-import tsPlugin from '@typescript-eslint/eslint-plugin';
-import tsParser from '@typescript-eslint/parser';
 
 export default [
     {
@@ -27,19 +26,13 @@ export default [
             prettier: prettierPlugin,
         },
         rules: {
-            // Regras do Prettier
             'prettier/prettier': ['error'],
-
-            // Detecta imports ausentes
             'import/no-unresolved': 'error',
             'import/named': 'error',
             'import/default': 'error',
             'import/namespace': 'error',
-
-            // Evita remoção de imports necessários
             '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'none' }],
             'no-unused-vars': 'error',
-            // Remover imports não utilizados
             'no-undef': 'error',
             'unused-imports/no-unused-imports': 'error',
             'unused-imports/no-unused-vars': [
@@ -51,22 +44,20 @@ export default [
                     argsIgnorePattern: '^_',
                 },
             ],
-            // Regras de ordenação de imports
             'import/order': [
                 'error',
                 {
-                    groups: [['builtin', 'external'], ['internal'], ['parent', 'sibling', 'index']],
+                    groups: [
+                        ['builtin'],
+                        ['external'],
+                        ['internal'],
+                        ['parent', 'sibling', 'index'],
+                    ],
                     alphabetize: { order: 'asc', caseInsensitive: true },
                     'newlines-between': 'always',
                 },
             ],
 
-            // Evitar remoção de imports necessários
-            /* '@typescript-eslint/no-unused-vars': [
-                 'error',
-                 { vars: 'all', args: 'none' },
-             ],
-             'no-unused-vars': ['error', { vars: 'all', args: 'none' }],*/
             'no-duplicate-imports': 'error',
             'no-import-assign': 'error',
             'no-restricted-imports': 'error',
@@ -96,7 +87,7 @@ export default [
             },
         },
         rules: {
-            'no-undef': 'off', // Desativa erros para variáveis globais reconhecidas
+            'no-undef': 'off',
         },
     },
 ];

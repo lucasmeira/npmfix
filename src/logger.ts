@@ -1,9 +1,10 @@
 import fs from 'fs';
 import path from 'path';
+
 import winston, { createLogger, format, transports } from 'winston';
 import DailyRotateFile from 'winston-daily-rotate-file';
 
-const CONFIG_PATH = path.resolve(__dirname, '../config.json');
+const CONFIG_PATH = path.resolve(__dirname, 'src/config.json');
 
 function getConfig(): { maxFiles: string } {
     if (fs.existsSync(CONFIG_PATH)) {

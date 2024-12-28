@@ -14,9 +14,9 @@
         "build": "tsc",
         "start": "node -r tsconfig-paths/register dist/index.js",
         "dev": "ts-node -r tsconfig-paths/register src/index.ts",
-        "test": "jest --config=jest.config.mjs /src",
-        "test:watch": "jest --watch --config=jest.config.mjs src/",
-        "test:coverage": "jest --coverage --config=jest.config.mjs src/",
+        "test": "jest --config=jest.config.mjs",
+        "test:watch": "jest --watch --config=jest.config.mjs",
+        "test:coverage": "jest --coverage --config=jest.config.mjs",
         "ci": "npm run fix-imports && npm run test && npm run build",
         "release": "npm run ci && changeset publish",
         "prepare": "husky"

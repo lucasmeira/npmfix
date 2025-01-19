@@ -1,11 +1,12 @@
 import { exec } from 'child_process';
 import * as util from 'node:util';
 
-import { logger } from 'src/logger';
+import LoggerService from '@/src/logger';
 
 const execAsync = util.promisify(exec);
 
 export async function runCommand(script: string): Promise<void> {
+    const logger = await LoggerService.getInstance();
     try {
         logger.info(`Executing script: ${script}`);
         const { stdout, stderr } = await execAsync(script);

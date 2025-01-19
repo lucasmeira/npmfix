@@ -1,8 +1,9 @@
 import i18n from '../i18n/index';
-import { logger } from '../logger';
+import LoggerService from '../logger';
 import { runCommand } from './run';
 
 export async function reinstallPackages() {
+    const logger = await LoggerService.getInstance();
     try {
         logger.info(i18n.t('reinstallingPackages'));
         await runCommand('npm install');

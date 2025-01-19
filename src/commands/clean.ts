@@ -2,10 +2,11 @@ import fs from 'fs';
 import path from 'path';
 
 import i18n from '../i18n';
-import { logger } from '../logger';
+import LoggerService from '../logger';
 import { runCommand } from './run';
 
 export async function cleanProject() {
+    const logger = await LoggerService.getInstance();
     const projectDir = process.cwd();
     const dirsToDelete = ['node_modules', 'dist'];
     const filesToDelete = ['package-lock.json', 'tsconfig.tsbuildinfo'];

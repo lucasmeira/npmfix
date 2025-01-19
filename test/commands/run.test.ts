@@ -1,15 +1,24 @@
-import { runCommand } from 'src/commands/run';
-import { logger } from 'src/logger';
+import type { Logger } from 'winston';
 
-jest.mock('src/logger', () => ({
-    logger: {
-        info: jest.fn(),
-        error: jest.fn(),
-    },
-}));
+import { runCommand } from '@/src/commands/run';
+import LoggerService from '@/src/logger';
 
-describe('runCommand', () => {
-    it('deve executar o comando echo e registrar a saída correta', async () => {
+jest.mock('@/src/logger', () => {
+    return {
+        getInstance: jest.fn().mockResolvedValue({
+            info: jest.fn(),
+            error: jest.fn(),
+        }),
+    };
+});
+
+describe('runCommand - Shell Command Execution and Logging', () => {
+    let logger: Logger;
+    beforeEach(async () => {
+        logger = await LoggerService.getInstance();
+    });
+
+    it('should execute the echo command and log the correct output', async () => {
         const script = 'echo "Hello World!"';
         await runCommand(script);
 

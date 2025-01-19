@@ -5,14 +5,17 @@
 ### Patch Changes
 
 #### Documentation
+
 - **docs**: Improve CLI setup instructions in README.md (80a5c82)
 
 #### Build and Configuration
+
 - **build**: Update changelog configuration for changesets (e2a2f6b)
 - **build**: Add module aliases for better path resolution (c61dba9)
 - **chore**: Enhance keywords for improved discoverability on npm and GitHub (005587f)
 
 #### Refactoring
+
 - **refactor**: Remove unused file and `.tgz` artifact (63d9a54, b0783ab)
 
 ---
@@ -22,6 +25,7 @@
 ### Patch Changes
 
 #### Structure and Documentation
+
 - **chore(structure)**: Reorganize project structure and align ESLint/Prettier configs (7f3feda)
 - **docs**: Fix links and references in README.md (42879cd)
 
@@ -32,13 +36,16 @@
 ### Patch Changes
 
 #### Bug Fixes
+
 - **fix**: Resolve "Cannot find module 'tslib'" issue (db14998)
 - **fix**: Update package name for npm compatibility (f74dd56)
 - **fix(ci)**: Adjust publish release workflow (2e9d01b)
 
 #### Features
+
 - **feat**: Add CLI functionality (b3baef9)
 
 #### Miscellaneous
+
 - Initial project setup and configuration
 - **fix**: Add `dist` directory to `.gitignore` (ef7abdd)

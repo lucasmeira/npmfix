@@ -63,7 +63,13 @@ export default [
             'no-restricted-imports': 'error',
             '@typescript-eslint/no-restricted-imports': 'error',
             '@typescript-eslint/no-require-imports': 'error',
-            '@typescript-eslint/consistent-type-imports': 'error',
+            '@typescript-eslint/consistent-type-imports': [
+                'error',
+                {
+                    prefer: 'type-imports',
+                    fixStyle: 'separate-type-imports',
+                },
+            ],
             '@typescript-eslint/no-import-type-side-effects': 'error',
             'sort-imports': 'off',
             'lines-around-comment': ['error'],
@@ -72,6 +78,10 @@ export default [
             'import/resolver': {
                 typescript: {
                     project: './tsconfig.json',
+                },
+                alias: {
+                    map: [['@', './']],
+                    extensions: ['.ts', '.js', '.jsx', '.tsx'],
                 },
             },
         },

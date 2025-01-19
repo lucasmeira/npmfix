@@ -1,6 +1,6 @@
 {
     "name": "@lucasmeira/npmfix",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A CLI to fix npm dependencies",
     "private": false,
     "main": "dist/src/index.js",
@@ -23,7 +23,7 @@
         "ci": "npm run fix-imports && npm run test && npm run build",
         "changelog:version": "npx changeset version",
         "changelog:publish": "npx changeset publish",
-        "release": "npm run ci && npm run changelog:version && npm run changeset:publish",
+        "release": "npm run ci && npm run changelog:version && npm run changelog:publish",
         "prepare": "husky"
     },
     "keywords": [

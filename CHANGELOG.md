@@ -1,5 +1,16 @@
 # @lucasmeira/npmfix
 
+## 0.0.4
+
+### Patch Changes
+
+#### Miscellaneous
+
+- fix(ci): correct command in release script (0fb45e9)
+- chore(release): update changeset config to streamline publishing (c2c76f6)
+- chore(husky): enhance pre-commit hook with dependency and code quality checks (07b9d2a)
+- fix(logging): correct log reference and improve project configuration (c48e000)
+
 ## 0.0.3
 
 ### Patch Changes

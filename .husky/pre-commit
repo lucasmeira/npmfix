@@ -1,1 +1,4 @@
+npm install --package-lock-only
+git add -i package-lock.json
+npm run fix-imports
 npm test

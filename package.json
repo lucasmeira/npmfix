@@ -23,7 +23,7 @@
         "ci": "npm run fix-imports && npm run test && npm run build",
         "changelog:version": "npx changeset version",
         "changelog:publish": "npx changeset publish",
-        "release": "npm run ci && npm run changelog:version && npn run changeset:publish",
+        "release": "npm run ci && npm run changelog:version && npm run changeset:publish",
         "prepare": "husky"
     },
     "keywords": [

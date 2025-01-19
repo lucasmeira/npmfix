@@ -1,7 +1,8 @@
 {
     "$schema": "https://unpkg.com/@changesets/config@3.0.4/schema.json",
     "changelog": ["@changesets/changelog-github", { "repo": "lucasmeira/npmfix" }],
-    "commit": false,
+    "commit": true,
+    "tag": true,
     "fixed": [],
     "linked": [],
     "access": "public",

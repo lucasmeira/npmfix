@@ -21,7 +21,9 @@
         "test:watch": "jest --watch --config=jest.config.mjs",
         "test:coverage": "jest --coverage --config=jest.config.mjs",
         "ci": "npm run fix-imports && npm run test && npm run build",
-        "release": "npm run ci && changeset publish",
+        "changelog:version": "npx changeset version",
+        "changelog:publish": "npx changeset publish",
+        "release": "npm run ci && npm run changelog:version && npn run changeset:publish",
         "prepare": "husky"
     },
     "keywords": [

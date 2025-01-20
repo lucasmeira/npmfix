@@ -8,7 +8,7 @@
         "npmfix": "dist/src/index.js"
     },
     "_moduleAliases": {
-        "src": "dist/src"
+        "@": "./dist/"
     },
     "scripts": {
         "format": "prettier --write .",

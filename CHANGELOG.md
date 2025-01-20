@@ -1,5 +1,12 @@
 # @lucasmeira/npmfix
 
+## 0.0.5
+## Summary of Changes
+
+### Miscellaneous
+- chore(cleanup): remove unnecessary .js test files (9802f6e)
+- fix(build): update module aliases for correct execution (378b512)
+
 ## 0.0.4
 
 ### Patch Changes
